@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <!-- <div class="container">
+        <h1>Subscription Types</h1>
+        <table>
+            <thead>
+               <tr>
+                   <th>Subscription</th>
+                   <th>Price</th>
+                   <th>Support</th>
+               </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Free</td>
+                    <td>Free</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Personal</td>
+                    <td>$9.99</td>
+                    <td>Weekdays</td>
+                </tr>
+                <tr>
+                    <td>Business</td>
+                    <td>$49.99</td>
+                    <td>24/7</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+
+    </div>-->
+    <div class="container">
+        <h1>Race Registration!</h1>
+        <!-- Action === where the data is sent -->
+        <form action="">
+            <div>
+                <label for="first">First Name</label>
+                <input type="text" name="first" id="first" required>
+                <label for="last">Last Name</label>
+                <input type="text" name="last" id="last" required>
+            </div>
+            <p>Select a Race:</p>
+            <!-- All have the same naem"race:, so that they are treated as a group: you can only choose one -->
+            <!-- Also, the value is the data that will be sent to the back end -->
+            <div>
+                <input type="radio" name="race" id="fun" value="fun">
+                <label for="fun">Fun Run 5k</label>
+                <br>
+                <input type="radio" name="race" id="half" value="half">
+                <label for="half">Half Marathon</label>
+                <br>
+                <input type="radio" name="race" id="full" value="full">
+                <label for="full">Full Marathon</label>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <label for="age">Select Age Group</label>
+            <select name="age" id="age">
+                <option value="under18">Under 18</option>
+                <option value="18-65">18-40</option>
+                <option value="senior">over 65</option>
+            </select>
+            <br>
+            <button type="submit">Register</button>
+        </form>
+
+    </div>
+</body>
+</html>
